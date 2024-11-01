@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    font-family: 'Lobster';
+    font-size: 2rem;
+    font-weight: thin;
+    width: 10rem;
+    padding: 1rem;
+    background-color: #ff8ba0;
+}
+
