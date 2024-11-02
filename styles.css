@@ -1,14 +1,106 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER NAV BAR */
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     font-family: 'Lobster';
-    font-size: 2rem;
-    font-weight: thin;
-    width: 10rem;
+    font-size: 1.5rem;
     padding: 1rem;
     background-color: #ff8ba0;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+ul li a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: black;
+}
+
+/* ADD HOVER FOR NAV BAR ITEMS */
+
+/* GRID DISPLAYING FLOWERS */
+.flowers-container {
+    margin: 5rem;
+    padding: 5rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    gap: 1rem;
+    color: white;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.flower {
+    height: 500px;
+    width: 300px;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.flower:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.flower1 {
+    background-color: red;
+}
+
+.flower2 {
+    background-color: blue;
+}
+
+.flower3 {
+    background-color: green;
+}
+
+.flower4 {
+    background-color: pink;
+}
+
+.flower5 {
+    background-color: purple;
+}
+
+.flower6 {
+    background-color: yellow;
+}
+
+.flower7 {
+    background-color: orange;
+}
+
+.flower8 {
+    background-color: indigo;
+}
+
+.flower9 {
+    background-color: black;
+}
+
+.flower10 {
+    background-color: grey;
+}
+
+.flower11 {
+    background-color: teal;
+}
+
+.flower12 {
+    background-color: crimson;
+}
