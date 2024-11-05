@@ -10,14 +10,21 @@
 header {
     display: flex;
     justify-content: space-between;
+    background-color: #ff8ba0;
 }
 
+body {
+    background-color: #FFB6C1;
+}
+
+p {
+    font-size: 1.5rem;
+}
 
 .logo {
     font-family: 'Lobster';
     font-size: 1.5rem;
     padding: 1rem;
-    background-color: #ff8ba0;
 }
 
 
@@ -35,9 +42,11 @@ ul li a {
     color: black;
 }
 
-
-/* ADD HOVER FOR NAV BAR ITEMS */
-
+ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+}
 
 /* GRID DISPLAYING FLOWERS */
 .flowers-container {
@@ -57,72 +66,15 @@ ul li a {
     width: 300px;
     border-radius: .5rem;
     text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
 }
-
 
 .flower:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
-
-
-.flower1 {
-    background-color: red;
+.image {
+    height: 300px;
+    width: 250px;
 }
-
-
-.flower2 {
-    background-color: blue;
-}
-
-
-.flower3 {
-    background-color: green;
-}
-
-
-.flower4 {
-    background-color: pink;
-}
-
-
-.flower5 {
-    background-color: purple;
-}
-
-
-.flower6 {
-    background-color: yellow;
-}
-
-
-.flower7 {
-    background-color: orange;
-}
-
-
-.flower8 {
-    background-color: indigo;
-}
-
-
-.flower9 {
-    background-color: black;
-}
-
-
-.flower10 {
-    background-color: grey;
-}
-
-
-.flower11 {
-    background-color: teal;
-}
-
-
-.flower12 {
-    background-color: crimson;
-}
-
-
