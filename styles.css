@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 /* HEADER NAV BAR */
 header {
     display: flex;
@@ -13,41 +12,11 @@ header {
     background-color: #ff8ba0;
 }
 
-body {
-    /* background-color: #FFB6C1; */
-}
-
-.title {
-    font-size: 1.5rem;
-}
-
-.landing {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
     font-family: 'Lobster';
     font-size: 1.5rem;
     padding: 1rem;
     margin-left: 2rem;
-}
-
-.brand {
-    font-family: 'Lobster';
-    font-size: 3rem;
-    color: #FFB6C1;
-}
-
-.all {
-    font-size: 3.5rem;
-    color: #FFB6C1;
-}
-
-.slogan {
-    margin-left: 3rem;
-    width: 25rem;
-    font-size: 2rem;
 }
 
 ul {
@@ -70,42 +39,95 @@ ul li a:hover {
     text-underline-offset: .5rem;
 }
 
-.landingpage {
-    margin-top: 6rem;
+/* LANDING PAGE */
+
+#landing {
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+}
+
+.slogan {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 35%;
+    font-size: 2rem;
+}
+
+.brand {
+    font-family: 'Lobster';
+    font-size: 3rem;
+    color: #FFB6C1;
+}
+
+.all {
+    font-size: 3.5rem;
+    color: #FFB6C1;
+}
+
+#landing img {
     margin-left: 3rem;
     border-radius: 10%;
-    height: 40rem;
+    height: auto;
+    width: 60%;
 }
 
 /* GRID DISPLAYING FLOWERS */
-.flowers-container {
+#flowers-container {
     margin: 5rem;
     padding: 5rem;
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 300px);
-    gap: 1rem;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    gap: 2rem;
+    row-gap: 4rem;
     color: white;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-
 .flower {
-    height: 40rem;
-    width: 18.75rem;
+    height: auto;
+    width: 100%;
     border-radius: .5rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flower:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
+
+.flower-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: black;
+}
+
 .image {
-    height: 300px;
-    width: 250px;
+    height: auto;
+    width: 75%;
+    margin-top: 1.5rem;
+}
+
+.description {
+    color: black;
+    margin-top: 1.5rem;
+    width: 75%;
+    text-align: start;
+}
+
+.price {
+    color: black;
+    text-align: start;
+    margin-top: 2.5rem;
 }
 
 .button {
@@ -113,12 +135,11 @@ ul li a:hover {
     height: 2rem;
     width: 6rem;
     background-color: #fff;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .button:hover {
     cursor: pointer;
 }
 
-p {
-    color: black;
-}
