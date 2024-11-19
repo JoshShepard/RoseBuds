@@ -131,8 +131,8 @@ ul li a:hover {
 }
 
 .button {
-    border-radius: 1rem;
-    height: 2rem;
+    border-radius: .5rem;
+    height: 2.5rem;
     width: 6rem;
     background-color: #fff;
     margin-bottom: 3rem;
@@ -141,5 +141,31 @@ ul li a:hover {
 
 .button:hover {
     cursor: pointer;
+    background-color: #ff8ba0;
 }
 
+/* CONTACT ME */
+#contact-me {
+    background-image: url(flowers/contact-me-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 2rem;
+    width: 70%;
+    height: 70%;
+}
+
+
+.contact-text {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
