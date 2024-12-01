@@ -39,6 +39,25 @@ ul li a:hover {
     text-underline-offset: .5rem;
 }
 
+@media only screen and (max-width: 24.375rem) {
+    .logo {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-bottom: 2rem;
+    }
+}
+
 /* LANDING PAGE */
 
 #landing {
