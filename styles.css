@@ -39,7 +39,7 @@ ul li a:hover {
     text-underline-offset: .5rem;
 }
 /* 24.375 */
-@media only screen and (max-width: 24.375rem) {
+@media only screen and (max-width: 390px) {
     .logo {
         display: none;
     }
@@ -51,10 +51,15 @@ ul li a:hover {
     ul {
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
     }
 
     li {
         margin-bottom: 2rem;
+    }
+
+    ul li a {
+        margin-right: 0;
     }
 }
 
@@ -91,7 +96,7 @@ ul li a:hover {
     width: 60%;
 }
 
-@media only screen and (max-width: 24.375rem) {
+@media only screen and (max-width: 390px) {
     #landing {
         flex-direction: column;
     }
@@ -123,6 +128,19 @@ ul li a:hover {
     row-gap: 4rem;
     color: white;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+@media only screen and (max-width: 390px) {
+    #flowers-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+        row-gap: 0;      
+    }
+
+    .flower {
+        border-bottom: 4px solid grey;
+    }
 }
 
 .flower {
@@ -215,4 +233,28 @@ ul li a:hover {
 
 .fname, .lname, .email {
     margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 390px) {
+    .contact-header {
+        font-size: 2rem;
+    }
+    .contact-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    label {
+        display: none;
+    }
+
+    input {
+        height: 3rem;
+        width: 16rem;
+        text-align: center;
+    }
+
+    input:focus::placeholder {
+        opacity: 0;
+    }
 }
